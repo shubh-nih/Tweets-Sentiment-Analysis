@@ -93,13 +93,13 @@ if analyze_button and user_input.strip():
     st.markdown("#### Sentiment Probability Chart")
     st.bar_chart(prob_df.set_index('Sentiment'))
 
-    st.session_state.history.append((user_input, prediction, probabilities))
+    st.session_state.history.append((user_input, prediction))
 
     st.markdown("## 📜 Recent Analysis")
     with st.container():
-        for t, p, prob in reversed(st.session_state.history[-5:]):
+        for t, p in reversed(st.session_state.history[-5:]):
             st.markdown(f"**Tweet:** {t}")
-            st.markdown(f"**Sentiment:** {'Positive 😊' if p else 'Negative ☹️'} | **Probability:** {prob[1]*100:.1f}%")
+            st.markdown(f"**Sentiment:** {'Positive 😊' if p else 'Negative ☹️'}")
             st.markdown("---") 
 
 elif analyze_button and not user_input:
