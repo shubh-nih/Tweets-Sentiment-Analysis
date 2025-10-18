@@ -3,12 +3,9 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 ps = PorterStemmer()
-import nltk
+nltk.download('stopwords')
 
-try:
-    stop_words = set(stopwords.words('english'))
-except LookupError:
-    nltk.download('stopwords')
+stop_words = set(stopwords.words('english'))
 
 def transform_txt(txt):
     txt = re.sub(r'http\S+|www\S+|https\S+', '', txt, flags = re.MULTILINE)
