@@ -71,4 +71,5 @@ st.write("""
 """)
 st.markdown("📧 [Mail](mailto:shubhambisht149@gmail.com)")
 st.markdown("🪪 [LinkedIn](https://www.linkedin.com/in/shubhambisht7/)")
+st.markdown("📦 [View on GitHub](https://github.com/shubh-nih/Tweets-Sentiment-Analysis)")
 st.caption("© 2025 Tweet Sentiment Analysis Project | Built using Streamlit & Machine Learning")
