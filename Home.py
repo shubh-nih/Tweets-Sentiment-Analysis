@@ -45,9 +45,9 @@ st.markdown("---")
 
 st.header("📊 Model Performance Overview")
 col1, col2, col3 = st.columns(3)
-col1.metric("Accuracy", "77%")
-col2.metric("Precision", "79%")
-col3.metric("Recall", "75%")
+col1.metric("Accuracy", "77.03%")
+col2.metric("Precision", "75.80%")
+col3.metric("Recall", "79.43%")
 
 st.write("Sample sentiment distribution from dataset:")
 st.bar_chart({"Positive": 8000, "Negative": 8000})
